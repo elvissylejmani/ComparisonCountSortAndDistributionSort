@@ -70,10 +70,10 @@ namespace ComparisonCountSortAndDistributionSort
         static void Main(string[] args)
         {
                Random rand = new Random();
-               int[] A = new int[1000000];
+               int[] A = new int[100];
 
                int j = 0;
-               while (j < 1000000)
+               while (j < 100)
                {
                    A[j] = rand.Next(1 << 10000);
                    j++;
@@ -99,7 +99,7 @@ namespace ComparisonCountSortAndDistributionSort
             int[] SD = DistributionCountingSort(A);
 
 
-            Console.WriteLine("Comparison Counting sort: " + watch2.Elapsed);
+            Console.WriteLine("Distribution Counting sort: " + watch2.Elapsed);
 
             watch2.Stop();
             /* foreach(int i in SD)
